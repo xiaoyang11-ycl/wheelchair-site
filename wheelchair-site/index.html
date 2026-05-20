@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WHEELCHAIR ACCESSORIES · 轮椅配件定制</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body class="layout-stacked page-home">
+    <header class="site-header">
+      <div class="band-inner header-inner">
+        <a href="./index.html" class="brand" aria-label="首页">
+          <span class="brand-mark brand-mark--logo" aria-hidden="true">
+            <img src="./assets/logo.png" alt="WHEELCHAIR ACCESSORIES" width="42" height="42" decoding="async" />
+          </span>
+          <span class="brand-text">
+            <span class="brand-line">WHEELCHAIR</span>
+            <span class="brand-line muted">ACCESSORIES</span>
+          </span>
+        </a>
+        <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="主导航">
+          <a href="./index.html" class="is-active" aria-current="page">定制选配</a>
+          <a href="./customize.html#3d">场景方案</a>
+          <a href="./mall.html">配件商城</a>
+          <a href="./support.html">支持与服务</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="icon-btn" aria-label="搜索">
+            <svg class="nav-header-ico" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M20 20l-3.5-3.5" />
+            </svg>
+          </button>
+          <button type="button" class="icon-btn" aria-label="账户">
+            <svg class="nav-header-ico nav-header-ico--user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="9.5" r="3" />
+              <path d="M6.5 18.5c1.4-2.8 3.4-4 5.5-4s4.1 1.2 5.5 4" />
+            </svg>
+          </button>
+          <a class="btn-plan" href="./customize.html">
+            我的方案
+            <span class="badge">2</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="band home-hero" aria-label="首屏">
+        <div class="home-hero__bg" aria-hidden="true">
+          <img alt="" width="1024" height="361" src="./assets/hero.png" data-home-a="heroBg" decoding="async" fetchpriority="high" />
+        </div>
+        <div class="home-hero__shade" aria-hidden="true"></div>
+        <div class="band-inner home-hero__inner">
+          <div class="home-hero__main">
+            <header class="home-hero__intro">
+              <p class="home-hero__kicker">定制属于你的出行方案</p>
+              <h1 class="home-hero__title">舒适出行，从定制开始</h1>
+              <p class="home-hero__lead">轻松选择，快速组合，让每次出行更自由</p>
+            </header>
+            <ul class="home-hero__features" aria-label="核心能力">
+              <li>
+                <span class="home-hero__feat-icon">
+                  <img alt="" width="32" height="32" data-home-a="featIcon1" decoding="async" />
+                </span>
+                <span class="home-hero__feat-text">
+                  <strong>个性定制</strong>
+                  <span>专属配件方案</span>
+                </span>
+              </li>
+              <li>
+                <span class="home-hero__feat-icon">
+                  <img alt="" width="32" height="32" data-home-a="featIcon2" decoding="async" />
+                </span>
+                <span class="home-hero__feat-text">
+                  <strong>场景模拟</strong>
+                  <span>体验真实环境</span>
+                </span>
+              </li>
+              <li>
+                <span class="home-hero__feat-icon">
+                  <img alt="" width="32" height="32" data-home-a="featIcon3" decoding="async" />
+                </span>
+                <span class="home-hero__feat-text">
+                  <strong>精准测量</strong>
+                  <span>科学尺寸匹配</span>
+                </span>
+              </li>
+            </ul>
+            <div class="home-hero__foot">
+              <div class="home-hero__actions">
+                <a class="btn-home-primary" href="./customize.html#3d">
+                  开始定制方案
+                  <img alt="" width="11" height="9" data-home-a="ctaArrow" decoding="async" />
+                </a>
+                <a class="btn-home-ghost" href="./customize.html">了解更多</a>
+              </div>
+              <p class="home-hero__social">
+                <img alt="" height="20" data-home-a="socialAvatars" decoding="async" />
+                <span>已有 <em>3,264</em> 位用户定制专用方案</span>
+              </p>
+            </div>
+          </div>
+          <aside class="home-steps" aria-label="快速定制三步走">
+            <h3>快速定制三步走</h3>
+            <ol>
+              <li>
+                <span class="step-num" aria-hidden="true"><img alt="" data-home-a="stepNum" decoding="async" /><span>01</span></span>
+                <span class="step-title">选择场景</span>
+                <span class="step-desc">根据你的需求选择合适的出行场景</span>
+              </li>
+              <li>
+                <span class="step-num" aria-hidden="true"><img alt="" data-home-a="stepNum" decoding="async" /><span>02</span></span>
+                <span class="step-title">配备配件</span>
+                <span class="step-desc">挑选最匹配的轮椅配件组合</span>
+              </li>
+              <li>
+                <span class="step-num" aria-hidden="true"><img alt="" data-home-a="stepNum" decoding="async" /><span>03</span></span>
+                <span class="step-title">尺寸适配</span>
+                <span class="step-desc">精准测量，确保轮椅与配件完美贴合</span>
+              </li>
+            </ol>
+            <a class="btn-step-start" href="./customize.html#3d">
+              立即开始
+              <img alt="" width="11" height="9" data-home-a="ctaArrow" decoding="async" />
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="band home-scenes" aria-label="场景分类">
+        <div class="band-inner">
+          <div class="home-scenes__scroll" id="homeSceneScroll" role="tablist"></div>
+        </div>
+      </section>
+
+      <section class="band home-solutions" aria-label="推荐解决方案">
+        <div class="band-inner">
+          <header class="home-section-head">
+            <div>
+              <h2>推荐解决方案</h2>
+              <p>根据用户的需求，推荐最适合的解决方案</p>
+            </div>
+            <a href="./customize.html#3d">
+              查看全部方案
+              <img alt="" width="10" height="8" data-home-a="ctaArrow" decoding="async" />
+            </a>
+          </header>
+          <div class="home-sol-grid" id="homeSolGrid"></div>
+        </div>
+      </section>
+
+      <section class="band home-features" aria-label="功能入口">
+        <div class="band-inner">
+          <div class="home-feat-grid" id="homeFeatGrid"></div>
+        </div>
+      </section>
+
+      <section class="band home-trust" aria-label="服务承诺">
+        <div class="band-inner home-trust-grid">
+          <div class="home-trust-item">
+            <img alt="" width="38" height="38" data-home-a="trust1" decoding="async" />
+            <div>
+              <strong>专业定制</strong>
+              <span>一对一专属服务</span>
+            </div>
+          </div>
+          <div class="home-trust-item">
+            <img alt="" width="38" height="38" data-home-a="trust2" decoding="async" />
+            <div>
+              <strong>品质保障</strong>
+              <span>严格质量把控</span>
+            </div>
+          </div>
+          <div class="home-trust-item">
+            <img alt="" width="38" height="38" data-home-a="trust3" decoding="async" />
+            <div>
+              <strong>安全可靠</strong>
+              <span>多国安全检测</span>
+            </div>
+          </div>
+          <div class="home-trust-item">
+            <img alt="" width="38" height="38" data-home-a="trust4" decoding="async" />
+            <div>
+              <strong>售后无忧</strong>
+              <span>完备售后服务体系</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="band-inner footer-grid">
+        <div>
+          <div class="brand">
+            <span class="brand-mark brand-mark--logo" aria-hidden="true">
+              <img src="./assets/logo.png" alt="" width="34" height="34" decoding="async" />
+            </span>
+            <span class="brand-text">
+              <span class="brand-line" style="color: #fff">WHEELCHAIR</span>
+              <span class="brand-line muted">ACCESSORIES</span>
+            </span>
+          </div>
+          <p style="margin: 0.75rem 0 0; color: #9ca3af; font-size: 0.95rem; max-width: 36ch">
+            致力于为用户提供高品质的轮椅配件和专业的服务，让行动更自由，生活更美好。
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>产品与服务</h4>
+          <ul>
+            <li><a href="./index.html">定制选配</a></li>
+            <li><a href="./customize.html#3d">场景方案</a></li>
+            <li><a href="./mall.html">配件商城</a></li>
+            <li><a href="./support.html">尺寸测量</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>帮助中心</h4>
+          <ul>
+            <li><a href="./support.html">使用指南</a></li>
+            <li><a href="#">维护保养</a></li>
+            <li><a href="#">视频教程</a></li>
+            <li><a href="#">常见问题</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>关于我们</h4>
+          <ul>
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">新闻资讯</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>关注我们</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="微信">
+              <img alt="" width="33" height="33" data-home-a="footerWx" decoding="async" />
+            </a>
+            <a href="#" aria-label="微博">
+              <img alt="" width="33" height="33" data-home-a="footerWb" decoding="async" />
+            </a>
+            <a href="#" aria-label="短视频">
+              <img alt="" width="33" height="33" data-home-a="footerDy" decoding="async" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="band-inner footer-bottom">
+        <p>© <span id="y"></span> WHEELCHAIR ACCESSORIES</p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" hidden role="status"></div>
+    <script src="./figma-home-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
