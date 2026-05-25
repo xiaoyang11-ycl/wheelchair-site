@@ -18,11 +18,11 @@ const ASSETS = {
     },
   ],
   scenes: [
-    { src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&q=80", label: "简约客厅" },
-    { src: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=80", label: "居家生活" },
-    { src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80", label: "公园绿道" },
-    { src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80", label: "办公大堂" },
-    { src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&q=80", label: "户外山景" },
+    { src: "./assets/scene-sim/scene-minimal-livingroom.png", label: "简约客厅" },
+    { src: "./assets/scene-sim/scene-home-life.png", label: "居家生活" },
+    { src: "./assets/scene-sim/scene-park-greenway.png", label: "公园绿道" },
+    { src: "./assets/scene-sim/scene-office-lobby.png", label: "办公大厅" },
+    { src: "./assets/scene-sim/scene-outdoor-mountain.png", label: "户外山景" },
   ],
 };
 
@@ -142,12 +142,13 @@ function setupModes() {
 function initSceneSim() {
   const D = window.SCENE_SIM_DATA;
   if (!D) return;
+  const cmpBtn = document.getElementById("sceneCompareBtn");
 
   const bg = document.getElementById("sceneSimBg");
   if (bg) bg.style.backgroundImage = `url(${D.U.pageBg})`;
 
   const sub = document.getElementById("sceneSimSubtitle");
-  if (sub) sub.textContent = "根捆不同使用场景，推荐适合的配件组合，让出行更自由";
+  if (sub) sub.textContent = "根据不同使用场景，推荐适合的配件组合，让出行更自由";
 
   const strip = document.getElementById("sceneCatStrip");
   const wrap = document.getElementById("sceneCardsWrap");

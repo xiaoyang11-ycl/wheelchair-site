@@ -177,10 +177,38 @@ body.page-home .site-main {
   line-height: 0;
 }
 
-.home-hero__feat-icon img {
-  width: 36px;
-  height: 38px;
-  object-fit: contain;
+.home-ui-icon {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #696761;
+}
+
+.home-hero__feat-icon .home-ui-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.home-hero__avatars {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.home-hero__avatars::before,
+.home-hero__avatars::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d6d3d1, #a8a29e);
+  border: 2px solid #faf9f7;
+  box-sizing: border-box;
+}
+
+.home-hero__avatars::after {
+  margin-left: -7px;
+  background: linear-gradient(135deg, #c4c0bc, #9a9590);
 }
 
 .home-hero__feat-text {
@@ -235,11 +263,13 @@ body.page-home .site-main {
   background: #2a2a29;
 }
 
-.btn-home-primary img {
-  width: 11px;
-  height: 9px;
-  object-fit: contain;
-  opacity: 0.9;
+.btn-home-primary .home-ui-icon--arrow,
+.btn-step-start .home-ui-icon--arrow,
+.home-section-head a .home-ui-icon--arrow {
+  width: 14px;
+  height: 14px;
+  color: currentColor;
+  opacity: 0.95;
 }
 
 .btn-home-ghost {
@@ -355,14 +385,14 @@ body.page-home .site-main {
   top: 1px;
 }
 
-.home-steps .step-num img {
+.home-steps .step-num::before {
+  content: "";
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid #e3ddd6;
+  background: #f3efe9;
   z-index: 0;
-  pointer-events: none;
 }
 
 .home-steps .step-num > span {
@@ -404,10 +434,6 @@ body.page-home .site-main {
   font-size: 0.864rem;
 }
 
-.home-steps .btn-step-start img {
-  width: 11px;
-  height: 9px;
-}
 
 /* 场景分类 */
 .home-scenes {
@@ -460,11 +486,15 @@ body.page-home .site-main {
   margin-left: 0.15rem;
 }
 
-.home-scene-pill__ico img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+.home-scene-pill__ico svg {
+  width: 20px;
+  height: 20px;
   display: block;
+  color: #8d8881;
+}
+
+.home-scene-pill.is-active .home-scene-pill__ico svg {
+  color: #5f5e5d;
 }
 
 .home-scene-pill__text {
@@ -545,10 +575,6 @@ body.page-home .site-main {
   gap: 0.25rem;
 }
 
-.home-section-head a img {
-  width: 10px;
-  height: 8px;
-}
 
 .home-sol-grid {
   display: grid;
@@ -670,10 +696,10 @@ body.page-home .site-main {
   cursor: pointer;
 }
 
-.home-sol-card__arrow img {
+.home-sol-card__arrow .home-ui-icon--arrow {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  color: #6d6d6e;
 }
 
 /* 功能三卡 */
@@ -694,9 +720,7 @@ body.page-home .site-main {
   border: 1px solid #e3e0dc;
   border-radius: 12px;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: stretch;
+  display: block;
   min-height: 148px;
   box-shadow:
     0 1px 2px rgba(17, 24, 39, 0.04),
@@ -716,7 +740,7 @@ body.page-home .site-main {
 }
 
 .home-feat-card__copy {
-  padding: 1.15rem 0.75rem 1.15rem 1.2rem;
+  padding: 1.15rem 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -757,25 +781,6 @@ body.page-home .site-main {
   background: #fafaf9;
 }
 
-.home-feat-card__img {
-  width: min(42%, 132px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.85rem 0.75rem;
-  background: linear-gradient(145deg, #f8f6f3 0%, #efebe6 100%);
-  border-left: 1px solid #ebe6e0;
-}
-
-.home-feat-card__img img {
-  width: 100%;
-  max-width: 108px;
-  height: auto;
-  max-height: 88px;
-  object-fit: contain;
-  filter: drop-shadow(0 6px 14px rgba(15, 23, 42, 0.1));
-}
-
 /* 信任条 */
 .home-trust {
   width: 100%;
@@ -796,10 +801,19 @@ body.page-home .site-main {
   gap: 0.75rem;
 }
 
-.home-trust-item img {
+.home-trust-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 38px;
   height: 38px;
-  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.home-trust-ico .home-ui-icon {
+  width: 24px;
+  height: 24px;
+  color: #686760;
 }
 
 .home-trust-item strong {

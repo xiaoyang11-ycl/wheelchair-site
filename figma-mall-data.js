@@ -1,21 +1,21 @@
 /**
- * 配件商城数据与配图（Unsplash + 本地生成精选图，UI 图标由页面 SVG/CSS 承担）
+ * 配件商城数据与配图（按文案匹配的本地产品图）
  */
 (function () {
-  const u = (id, w, h) =>
-    `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&h=${h}&q=85`;
+  const A = "./assets/";
+  const V = "?v=mall-20260526-10";
 
   const P = {
-    belt: u("photo-1618005182382-a4a83d14e5cd", 520, 390),
-    bag: u("photo-1553062407-98eeb64c6a62", 520, 390),
-    wheelchairA: u("photo-1580156496011-0f19ca03dd48", 520, 390),
-    wheelchairB: u("photo-1578496495271-c45f7d80e9d6", 520, 390),
-    wheelchairC: u("photo-1599438525983-7a58fd577294", 520, 390),
-    wheel: u("photo-1539183096417-db57ced88324", 520, 390),
-    pillow: u("photo-1631049307264-da0ec238f9f2", 520, 390),
-    cushion: u("photo-1617103794722-d72f6648aa05", 520, 390),
-    lifestyle: u("photo-1567515001799-21dad690eac9", 960, 540),
-    indoor: u("photo-1586105251261-7a756b9d9f4c", 960, 540),
+    belt: A + "mall/belt-real.png" + V,
+    bag: A + "mall/bag-real.png" + V,
+    wheelchairA: A + "mall/anti-tip-real.png" + V,
+    wheelchairB: A + "mall/footrest-real.png" + V,
+    wheelchairC: A + "mall/armrest-real.png" + V,
+    wheel: A + "mall/wheel-real.png" + V,
+    pillow: A + "mall/headrest-real.png" + V,
+    cushion: A + "mall/cushion-real.png" + V,
+    lifestyle: A + "mall/featured-kit.png" + V,
+    indoor: A + "mall/featured-kit.png" + V,
   };
 
   const catStrip = [
